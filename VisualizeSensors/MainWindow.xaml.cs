@@ -28,7 +28,7 @@ namespace VisualizeSensors
 
         SensorConfig sensorConfig;
 
-        string jsonFile = "sensor_configs/sensor.config";
+        string jsonFile = "SensorConfigs/sensor.config";
 
         bool swapLineColor = false;
 
