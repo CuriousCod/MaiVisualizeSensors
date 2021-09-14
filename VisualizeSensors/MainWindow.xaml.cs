@@ -102,11 +102,15 @@ namespace VisualizeSensors
 
             switch (e.Key.ToString())
             {
+                case "Escape":
+                    Environment.Exit(0);
+                    break;
                 case "Space":
                     DrawAllSensors();
                     break;
                 case "F1":
                     Topmost = !Topmost;
+                    Print($"Always on top: {Topmost}");
                     break;
                 case "F2":
                     if (SelectConfig()) {
