@@ -255,52 +255,34 @@ namespace VisualizeSensors
             Print("Drawing Line");
             // Print($"{X1} {Y1} {X2} {Y2}");
 
-            Line myLine;
+            Line sensorLine;
 
             foreach (int i in Enumerable.Range(0, pc.Count - 1)){
-                myLine = new Line();
-                myLine.Stroke = swapLineColor ? Brushes.Red : Brushes.Blue;
-                myLine.X1 = pc[i].X;
-                myLine.X2 = pc[i + 1].X;
-                myLine.Y1 = pc[i].Y;
-                myLine.Y2 = pc[i + 1].Y;
-                myLine.HorizontalAlignment = HorizontalAlignment.Left;
-                myLine.VerticalAlignment = VerticalAlignment.Center;
-                myLine.StrokeThickness = 2;
-                Canvas01.Children.Add(myLine);
+                sensorLine = new Line();
+                sensorLine.Stroke = swapLineColor ? Brushes.Red : Brushes.Blue;
+                sensorLine.X1 = pc[i].X;
+                sensorLine.X2 = pc[i + 1].X;
+                sensorLine.Y1 = pc[i].Y;
+                sensorLine.Y2 = pc[i + 1].Y;
+                sensorLine.HorizontalAlignment = HorizontalAlignment.Left;
+                sensorLine.VerticalAlignment = VerticalAlignment.Center;
+                sensorLine.StrokeThickness = 2;
+                Canvas01.Children.Add(sensorLine);
             }
 
-            myLine = new Line();
-            myLine.Stroke = swapLineColor ? Brushes.Red : Brushes.Blue;
-            myLine.X1 = pc[pc.Count - 1].X;
-            myLine.X2 = pc[0].X;
-            myLine.Y1 = pc[pc.Count - 1].Y;
-            myLine.Y2 = pc[0].Y;
-            myLine.HorizontalAlignment = HorizontalAlignment.Left;
-            myLine.VerticalAlignment = VerticalAlignment.Center;
-            myLine.StrokeThickness = 2;
-            Canvas01.Children.Add(myLine);
+            sensorLine = new Line();
+            sensorLine.Stroke = swapLineColor ? Brushes.Red : Brushes.Blue;
+            sensorLine.X1 = pc[pc.Count - 1].X;
+            sensorLine.X2 = pc[0].X;
+            sensorLine.Y1 = pc[pc.Count - 1].Y;
+            sensorLine.Y2 = pc[0].Y;
+            sensorLine.HorizontalAlignment = HorizontalAlignment.Left;
+            sensorLine.VerticalAlignment = VerticalAlignment.Center;
+            sensorLine.StrokeThickness = 2;
+            Canvas01.Children.Add(sensorLine);
 
             swapLineColor = !swapLineColor;
 
-        }
-
-        void DrawPolygon(PointCollection pc)
-        {
-            Print("Drawing Polygon");
-
-            Polygon myPolygon = new Polygon();
-            myPolygon.Points = pc;
-            myPolygon.Fill = Brushes.Blue;
-            // myPolygon.Width = 200;
-            // myPolygon.Height = 200;
-            myPolygon.Stretch = Stretch.Fill;
-            myPolygon.Stroke = Brushes.Black;
-            myPolygon.StrokeThickness = 2;
-
-            myPolygon.Margin = new Thickness(pc[0].X, pc[0].Y, 0, 0);
-
-            Canvas01.Children.Add(myPolygon);
         }
 
         bool SelectConfig()
