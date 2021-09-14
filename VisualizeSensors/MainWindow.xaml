@@ -1,0 +1,20 @@
+﻿<Window x:Name="Window" x:Class="VisualizeSensors.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VisualizeSensors"
+        mc:Ignorable="d"
+        Title="VisualizeSensors" Height="450" Width="800" PreviewKeyDown="Window_PreviewKeyDown" PreviewMouseLeftButtonDown="Window_PreviewMouseLeftButtonDown" PreviewMouseMove="Window_PreviewMouseMove" AllowsTransparency="True" WindowStyle="None" Background="#FF1C1C1C">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="232*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="343*"/>
+            <ColumnDefinition Width="205*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas x:Name="Canvas01" HorizontalAlignment="Stretch" Height="auto" VerticalAlignment="Stretch" Width="auto" Grid.ColumnSpan="4" Background="#FF1C1C1C">
+        </Canvas>
+
+    </Grid>
+</Window>
