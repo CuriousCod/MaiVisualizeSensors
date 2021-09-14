@@ -117,8 +117,11 @@ namespace VisualizeSensors
                 case "F2":
                     if (SelectConfig()) {
                         sensorConfig = ReadJson();
-                        if (sensorConfig != null)
+                        if (sensorConfig != null) {
+                            Canvas01.Children.Clear();
                             DrawAllSensors();
+                            SetWindowPositionAndSize();
+                        }
                     }
                     break;
                 case "F5":
@@ -135,9 +138,10 @@ namespace VisualizeSensors
                     Canvas01.Children.Clear();
                     break;
                 case "R":
+                    /*
                     if (input_ctrlHeld) {
                         Canvas01.RenderTransform = new TranslateTransform() {X = 0, Y = 0 };
-                    }
+                    }*/
                     break;
                 case "T":
                     if (Background == Brushes.Transparent) {
