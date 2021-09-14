@@ -49,8 +49,10 @@ namespace VisualizeSensors
             }
                             
             sensorConfig = ReadJson();
-            if (sensorConfig != null) 
+            if (sensorConfig != null) {
+                SetWindowPositionAndSize();
                 DrawAllSensors();
+            }
         } 
 
         void Print(string text) => Console.WriteLine(text);
@@ -79,7 +81,7 @@ namespace VisualizeSensors
             }
         }
 
-        private void SetWindowPosition()
+        private void SetWindowPositionAndSize()
         {
             Top = 0;
             Left = 0;
@@ -124,7 +126,7 @@ namespace VisualizeSensors
                     break;
                 case "F11":
                     if (sensorConfig != null)
-                        SetWindowPosition();
+                        SetWindowPositionAndSize();
                     break;
                 case "M":
                     MoveCanvas();
