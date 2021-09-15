@@ -1,10 +1,10 @@
-# MaiVisualizeSensors
+# MaiVisualizeSensors #
 Draws maimai (original) sensors on the screen based on the config values  
 Used to debug sensor positions for MaiSense
 
 Config works with the MaiSense fork: 
 
-# How To Use
+## How To Use ## 
 
 1. Edit sensor region values and window resolution in the sensor.config
 2. Load the application
@@ -17,7 +17,7 @@ Config works with the MaiSense fork:
   - Only 1P is supported
   - If you have enabled 2P mode (1p_only = 0), you should halve the window width in the config
 
-# Keyboard shortcuts
+## Keyboard shortcuts ##
 
 | Key  | Action |
 | ------------- | ------------- |
@@ -33,6 +33,6 @@ Config works with the MaiSense fork:
 | Number keys (1-8 and 0)  | Draws the matching sensor 1 -> sensor A1, 0 -> sensor C  |
 | Number keys + Ctrl  | Draws the B sensor (B1-B8) instead of A  |
 
-# Preview
+## Preview ##
 
 <img src="https://www.dropbox.com/s/r1arn9e1da8swhw/Github_VisualizeSensors.png?raw=1" alt="preview" width="800" height="800"/>
