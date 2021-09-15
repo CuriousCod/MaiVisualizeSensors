@@ -31,4 +31,4 @@ Used to debug sensor positions for MaiSense
 | Number keys (1-8 and 0)  | Draws the matching sensor 1 -> sensor A1, 0 -> sensor C  |
 | Number keys + Ctrl  | Draws the B sensor (B1-B8) instead of A  |
 
-
+![Preview image](https://www.dropbox.com/s/r1arn9e1da8swhw/Github_VisualizeSensors.png?raw=1)
