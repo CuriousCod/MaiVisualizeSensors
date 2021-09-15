@@ -2,7 +2,7 @@
 Draws maimai (original) sensors on the screen based on the config values  
 Used to debug sensor positions for MaiSense
 
-Config works with the MaiSense fork: 
+Config works with the MaiSense fork: https://github.com/CuriousCod/MaiSense
 
 ## How To Use ## 
 
