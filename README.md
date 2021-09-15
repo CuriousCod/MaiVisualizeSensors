@@ -1,5 +1,5 @@
 # MaiVisualizeSensors
-Draws maimai (original) sensors on the screen based on the config values
+Draws maimai (original) sensors on the screen based on the config values  
 Used to debug sensor positions for MaiSense
 
 # How To Use
