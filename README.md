@@ -1,8 +1,8 @@
 # MaiVisualizeSensors #
-Draws maimai (SDEY) sensors on the screen based on the config values  
+Draws maimai (SDEY) sensors on screen according to the values in the config  
 Used to debug sensor positions for MaiSense
 
-Config works with the MaiSense fork: https://github.com/CuriousCod/MaiSense
+Config works with this MaiSense fork: https://github.com/CuriousCod/MaiSense
 
 ## How To Use ## 
 
