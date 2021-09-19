@@ -1,8 +1,8 @@
 # MaiVisualizeSensors #
-Draws maimai (SDEY) sensors on the screen based on the config values  
+Draws maimai (SDEY) sensors on screen according to the values in the config  
 Used to debug sensor positions for MaiSense
 
-Config works with the MaiSense fork: https://github.com/CuriousCod/MaiSense
+Config works with this MaiSense fork: https://github.com/CuriousCod/MaiSense
 
 ## How To Use ## 
 
@@ -14,8 +14,7 @@ Config works with the MaiSense fork: https://github.com/CuriousCod/MaiSense
 - Default configs are located in SensorConfigs folder
 - Sensors can be drawn off-screen, if the width or height exceeds the monitor width
 - The config resolution should match the maimai window resolution in order to position the sensors correctly
-  - Only 1P is supported
-  - If you have enabled 2P mode (1p_only = 0), you should halve the window width in the config
+  - Only 1P sensors are supported
 
 ## Keyboard shortcuts ##
 
