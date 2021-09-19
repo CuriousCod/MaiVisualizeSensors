@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace VisualizeSensors
 {
@@ -11,6 +12,9 @@ namespace VisualizeSensors
         public Dictionary<string, List<List<int>>> regions { get; set; }
 
         public RefScreen ref_screen;
+
+        [JsonProperty("1p_only")]
+        public bool onePlayer_only;
 
     }
 

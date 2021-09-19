@@ -85,7 +85,7 @@ namespace VisualizeSensors
         {
             Top = 0;
             Left = 0;
-            Width = sensorConfig.ref_screen.width;
+            Width = sensorConfig.ref_screen.width / (sensorConfig.onePlayer_only ? 1 : 2);
             Height = sensorConfig.ref_screen.height;
         }
 
